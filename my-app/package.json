@@ -20,6 +20,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
+  "homepage": {"https://zuzuka1717.github.io/todo_list_app_react"},
   "eslintConfig": {
     "extends": [
       "react-app",
