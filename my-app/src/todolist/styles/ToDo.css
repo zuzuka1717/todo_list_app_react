@@ -1,0 +1,95 @@
+.ToDo {
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+  background-color:rgb(208, 236, 245);
+  display: flex;
+  justify-content: space-between;
+  color: rgb(69, 73, 73);
+  border: none;
+}
+
+.ToDoList-container {
+  background-color: rgb(180, 218, 243);
+  width: 600px;
+  margin-bottom: 100px;
+  padding: 30px;
+  box-shadow: -20px -20px 0px 0px rgb(209, 216, 216);
+  margin-top: 70px;
+}
+
+.Container {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(240, 216, 232), rgb(235, 238, 198), rgb(235, 241, 240));
+}
+
+.Icon {
+  color: rgb(78, 131, 175);
+  margin-right: 12px;
+  font-size: 15px;
+}
+
+.Icon:hover {
+  cursor: pointer;
+  color: rgb(31, 81, 104);
+}
+
+.Save-Todo {
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(144, 215, 218);
+  font-size: 20px;
+  padding: 10px;
+}
+
+.Header-Container {
+  display: flex;
+  justify-content: center;
+  color: rgb(79, 82, 81);
+  margin-bottom: 30px;
+}
+
+.Input-Edit {
+  width: 400px;
+  height: 40px;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.Todo-Form {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.Todo-Task {
+  position: relative;
+  transition: opacity 0.4s linear;
+}
+
+.Todo-Task.completed {
+ opacity: 0.6s;
+}
+
+.Todo-Task.completed:before {
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: -0.5rem;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  animation: strikeitem 0.5s ease-out 0s forwards;
+}
+
+@keyframes strikeitem {
+  to {
+    width: calc(100% + 1rem);
+  }
+}

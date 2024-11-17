@@ -1,0 +1,17 @@
+.Add-Todo {
+  color: rgb(235, 241, 245);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+  height: 58px;
+  width: 150px;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: rgb(137, 199, 235);
+  border: 0.5px solid rgb(235, 241, 245);
+}
+
+.Add-Todo:hover {
+  cursor: pointer;
+  background-color: rgb(130, 189, 202);
+}
